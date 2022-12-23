@@ -1,0 +1,32 @@
+.cont-main
+    display: grid
+    grid-template-columns: repeat(1,1fr)
+    @include borderStyle($pink,$widths:5px)
+    mix-blend-mode: $pink
+    margin: 20px 0 20px 75px 
+    background-color: #FFFFFF
+    @media (min-width: 360px )
+        width: 200px
+        
+    .cont-head
+        display: flex
+        flex-direction: column
+        .list
+            @include borderStyle($pink,$radius:0)
+            list-style: none
+            text-align: center
+            background-color: $pink
+            
+            li
+                margin: 0 5px 5px 0
+                @extend %font-cont
+    .cont-item
+        display: flex
+        justify-content: center
+        margin: 20px 0 10px 50px
+        
+        
+        img
+            width: 50%
+            
+           

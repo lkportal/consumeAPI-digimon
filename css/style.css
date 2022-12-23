@@ -2,18 +2,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap");
 .conteiner h1 {
   font-family: "Press Start 2P", cursive;
-  font-size: 18px;
+  font-size: 20px;
   text-align: center;
 }
 
-.cont-main .list li {
-  font-size: 15px;
+.cont-main .cont-head .list li, .conteiner .cont-head input {
+  font-size: 18px;
   font-weight: 200;
 }
 
 .conteiner {
   display: grid;
-  justify-content: center;
 }
 .conteiner h1 {
   margin-top: 50px;
@@ -26,7 +25,8 @@
   margin: 10px 5px 0 0;
   border: 1px solid #646C8F;
   border-radius: 5px;
-  padding: 5px;
+  padding: 5px 15px 5px 15px;
+  color: #646C8F;
 }
 .conteiner .cont-head button {
   margin: 10px 0 0 0;
@@ -38,26 +38,44 @@
 
 .cont-main {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  margin-top: 20px;
-}
-.cont-main img {
-  width: 50%;
-  margin-left: 50px;
-  flex: 0;
-}
-.cont-main .list {
-  position: relative;
-  top: 16px;
-  list-style: none;
-  background-color: #A3C9D9;
-  flex: 1;
-  border: 1px solid #A3C9D9;
+  grid-template-columns: repeat(1, 1fr);
+  border: 5px solid #F24162;
   border-radius: 5px;
+  mix-blend-mode: #F24162;
+  margin: 20px 0 20px 75px;
+  background-color: #FFFFFF;
 }
-.cont-main .list li {
-  margin-left: 20px;
-  margin-top: 5px;
+@media (min-width: 360px) {
+  .cont-main {
+    width: 200px;
+  }
+}
+.cont-main .cont-head {
+  display: flex;
+  flex-direction: column;
+}
+.cont-main .cont-head .list {
+  border: 1px solid #F24162;
+  border-radius: 0;
+  list-style: none;
+  text-align: center;
+  background-color: #F24162;
+}
+.cont-main .cont-head .list li {
+  margin: 0 5px 5px 0;
+}
+.cont-main .cont-item {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0 10px 50px;
+}
+.cont-main .cont-item img {
+  width: 50%;
+}
+
+body {
+  background-color: #A3C9D9;
+  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */

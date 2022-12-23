@@ -1,0 +1,26 @@
+.conteiner
+    display: grid
+    
+    
+    h1
+        @extend  %font-title
+        margin-top: 50px
+    .cont-head
+        display: flex
+        justify-content: center
+        input
+            margin: 10px 5px 0 0 
+            @include borderStyle($dark-blue) 
+            padding: 5px 15px 5px 15px
+            color:$dark-blue
+            @extend %font-cont
+        button
+            margin: 10px 0 0 0
+            @include borderStyle($dark-blue) 
+            
+            background-color: $dark-blue 
+            color: $fk-green     
+
+            
+
+         

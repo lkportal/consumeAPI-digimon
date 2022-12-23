@@ -1,0 +1,19 @@
+{
+  "name": "digimon-api-consume",
+  "version": "1.0.0",
+  "description": "consume Api digimon ",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lkportal/consumeAPI-digimon.git"
+  },
+  "author": "lkportal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lkportal/consumeAPI-digimon/issues"
+  },
+  "homepage": "https://github.com/lkportal/consumeAPI-digimon#readme"
+}
